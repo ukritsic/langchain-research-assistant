@@ -1,6 +1,6 @@
 from typing import List, Optional
 
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 
 from config import EMBED_MODEL, INDEX_DIR

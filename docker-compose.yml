@@ -1,0 +1,13 @@
+services:
+  research:
+    image: multi-doc-research-assistant:lastest
+    build: .
+    working_dir: /app
+    volumes:
+      - ./docs:/app/docs
+      - ./faiss_index:/app/faiss_index
+      - /home/toeyuk/.cache/huggingface:/app/.cache/huggingface
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+    entrypoint: ["python", "main.py"]
+

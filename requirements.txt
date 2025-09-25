@@ -1,0 +1,25 @@
+# LangChain core + community + OpenAI wrapper
+langchain>=0.2
+langchain-community>=0.2
+langchain-openai>=0.2
+
+# Embeddings & HF stack
+sentence-transformers>=2.7
+transformers>=4.43
+
+# Vector store (FAISS, CPU build)
+faiss-cpu>=1.8
+
+# PDF loader used by PyMuPDFLoader
+pymupdf>=1.24
+
+# BM25 retriever backend
+rank-bm25>=0.2.2
+
+# WebBaseLoader deps
+beautifulsoup4>=4.12
+lxml>=5.2
+requests>=2.32
+
+# (Optional but useful for token counting with some models)
+tiktoken>=0.7

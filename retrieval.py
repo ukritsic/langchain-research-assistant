@@ -1,8 +1,8 @@
 from typing import List
 
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain.retrievers import BM25Retriever
+from langchain_community.retrievers import BM25Retriever
 from langchain.retrievers.ensemble import EnsembleRetriever
 from langchain.retrievers.multi_query import MultiQueryRetriever
 from langchain.retrievers.document_compressors import LLMChainExtractor

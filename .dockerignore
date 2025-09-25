@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+
+# Build / VCS
+.git
+.gitignore
+
+# Caches
+.cache/
+.app-cache/
+__pycache__/
+
+# Data (mount at runtime)
+docs/
+draft/
+chroma_db/
+faiss_index/
+.faiss_index/
